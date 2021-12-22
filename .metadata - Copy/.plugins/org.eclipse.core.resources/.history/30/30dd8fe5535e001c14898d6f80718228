@@ -1,0 +1,22 @@
+import java.io.Serializable;
+
+@Entity
+@Table(name="Employee")
+public class Employee implements Serializable{
+	 @Id 
+	    @GeneratedValue(strategy = GenerationType.AUTO)
+	    @Column(name="EmpID")
+	    private int empID;
+	 
+	    @Column(name="EmpName")
+	    private String empName;
+	 
+	    @Column(name="EmpAddress")
+	    private String empAddress;
+	 
+	    @Column(name="EmpContact")
+	    private long empContact;
+
+	    @OneToOne(cascade = CascadeType.ALL) // perform Operation on the child class
+	    private Laptop laptop;
+}

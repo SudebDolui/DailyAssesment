@@ -1,0 +1,17 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
+
+//import org.junit.Test;
+
+class Demo {
+
+	@Test
+    public void myTest() {
+        //assertEquals(10, 10);
+        assertEquals("Hello", "Hello");
+    }
+
+}

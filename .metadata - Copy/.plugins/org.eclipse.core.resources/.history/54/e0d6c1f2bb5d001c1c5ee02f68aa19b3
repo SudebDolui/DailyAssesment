@@ -1,0 +1,9 @@
+package com.custom_annotations;
+
+public class Demo {
+	@Target({ ElementType.TYPE, ElementType.METHOD })
+	@Retention(RetentionPolicy.RUNTIME)
+	@Tag("fast")
+	public @interface Fast {
+	}
+}

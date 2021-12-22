@@ -1,0 +1,13 @@
+
+public class ConstructorDemo {
+	int pagenumber;
+    String title;
+    String publisher;
+    float price;
+    Book() {
+    	
+    }     //constructor
+    setBookTitle(String title)  {
+    	
+    }
+}

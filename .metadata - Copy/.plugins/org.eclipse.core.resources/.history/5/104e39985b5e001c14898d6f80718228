@@ -1,0 +1,11 @@
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Phone {
+@Id
+@GeneratedValue(strategy = GenerationType.auto)
+private Long phoneId;
+private String phoneNumber, type;
+}

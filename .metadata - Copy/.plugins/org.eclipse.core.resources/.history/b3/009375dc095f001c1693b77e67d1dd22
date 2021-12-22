@@ -1,0 +1,19 @@
+package com.task;
+
+public class Sales {
+public static boolean checkProductId(int value) {
+	if(value >= 10001 || value <= 99999) {
+		return true;
+	}
+	return false;
+}
+public String getAmount(String size) {
+	if(size == "S"){
+	return "30$";
+	}
+	else if(size == "M"){
+		return "50$";
+		}
+	
+}
+}

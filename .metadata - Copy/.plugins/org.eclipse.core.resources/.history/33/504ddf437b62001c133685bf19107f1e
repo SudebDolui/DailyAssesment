@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show on Wheel</title>
+<base href="C:/Users/Omen 15/Downloads/ShowOnWheel/"></base>
+</head>
+<body>
+	<div id="logo">
+		<img src="MainLogo.png" width="720" height="360" alt="Main Logo">
+	</div>
+	<img alt="coco" src="coco.jpg" height=560 width=720>
+	<h2>Movie: coco</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="Frozen2" src="Frozen2.jpg" height=560 width=720>
+	<h2>Movie: Frozen2</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="Gooddinasour" src="Gooddinasour.jpg" height=560 width=720>
+	<h2>Movie: Good Dinasour</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="luca" src="luca.jpg" height=560 width=720>
+	<h2>Movie: Luca</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="Onward" src="onward.jpg" height=560 width=720>
+	<h2>Movie: Onward</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="PeterPan" src="PeterPan.jpg" height=560 width=720>
+	<h2>Movie: Peter Pan</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="The SpongeBob Movie - Sponge on the Run" src="The_SpongeBob_Movie_-_Sponge_on_the_Run.png" height=560 width=720>
+	<h2>Movie: The SpongeBob Movie - Sponge on the Run</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="toystory4" src="toystory4.jpg" height=560 width=720>
+	<h2>Movie: Toy tory4</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="Frozen2" src="Frozen2.jpg" height=560 width=720>
+	<h2>Movie: Frozen2</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<img alt="Frozen2" src="Frozen2.jpg" height=560 width=720>
+	<h2>Movie: Frozen2</h2>
+	<br>
+	<h3>Released</h3>
+	<br>
+	<h3>Genre: Cartoon</h3>
+	<br>
+	<a href="upcomingmovies.html">Upcoming Movies</a>
+	<br>
+	<a href="aboutus.html">About Us</a>
+	<br>
+	<a href="contactus.html">Contact Us</a>
+</body>
+</html>

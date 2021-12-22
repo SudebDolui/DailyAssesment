@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
+
+class Demo {
+
+	@Test
+    public void myTest() {
+        //assertEquals(10, 10);
+        assertEquals("hello", "Hello");
+    }
+
+}

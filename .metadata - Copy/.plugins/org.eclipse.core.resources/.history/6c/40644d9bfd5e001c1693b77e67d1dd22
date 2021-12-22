@@ -1,0 +1,12 @@
+
+public class JDBCDemo {
+	public static void main(String[] args) {
+		try {
+			// Loading JDBC Driver into memory
+			// Creating Connection
+			// Here Sampledb is database Name, root is username and password
+			//SQL Statement Execution
+			//Boolean status = stmt.execute("create database sampledb");
+		}
+	}
+}

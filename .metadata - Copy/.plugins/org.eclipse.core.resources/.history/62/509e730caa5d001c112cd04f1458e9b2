@@ -1,0 +1,10 @@
+
+class Demo {
+
+	@Test
+    public void myTest() {
+        //assertEquals(10, 10);
+        assertEquals("hello", "Hello");
+    }
+
+}

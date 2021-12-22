@@ -1,0 +1,37 @@
+package com.restful_crud_operations;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+
+public class OneToManyRelationShip {
+	public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        SessionFactory factory=new  Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+         Session session = factory.openSession();
+         Transaction tx= session.beginTransaction();
+         
+         // Process to execute the Query         
+         Courses c1=new Courses();
+         c1.setPhoneNumber("8688397933");
+         c1.setType("Home");
+         Courses c2=new Courses();
+         c2.setPhoneNumber("8919440633");
+         c2.setType("Self");
+         List<Courses> phones = new ArrayList<Courses>();
+         phones.add(p2);
+         phones.add(p1);
+         Student student=new Student();
+
+         session.save(c1);
+         session.save(c2);
+         session.save(student);
+         tx.commit();  // Saving Object Permanently ans closing session
+         factory.close(); // closing very expensive connection
+    }
+ 
+}

@@ -1,0 +1,95 @@
+package com.test_calculator;
+
+import org.junit.*;
+
+// Failing cases
+
+public class CalculatorTester {
+	MainCalculator g;
+    int result;
+
+    @Test(timeout=10, expected=Exception.class)
+    public void TestingGreaterNumber1() {
+        int expected=10;
+        result = g.greatest(20, 10, 50);
+        Assert.assertEquals(expected, result);
+    }
+ 
+    @Before
+    @Ignore
+    public void TestingAddition() {
+        System.out.println("This Test case will execute first");
+        g = new MainCalculator();
+        int result=0;
+    }
+ 
+    @After
+    public void TestingSubtraction() {
+        System.out.println("Executes after the Test");
+        g=null;
+        result =0;
+    }
+ 
+    @AfterClass
+    public void TestingMultiplication() {
+        System.out.println("Executes in the End of the class");
+    }
+ 
+    @BeforeClass
+    // when the class loads into LVM
+    public void TestingModulo() {
+        System.out.println("Executes before loading class in memory");
+    }
+    @Test
+    public void TestingDivision() {
+        Greatest g = new Greatest();
+         double result = g.division(10, 3);
+        Assert.assertEquals(1.3, result);
+    }
+}
+
+// Passing Cases:
+
+public class GreatestTest {
+    Greatest g;
+    int result;
+
+    @Test(timeout=10, expected=Exception.class)
+    public void TestingGreaterNumber1() {
+        int expected=10;
+        result = g.greatest(20, 10, 50);
+        Assert.assertEquals(expected, result);
+    }
+ 
+    @Before
+    @Ignore
+    public void TestingAddition() {
+        System.out.println("This Test case will execute first");
+        Greatest g = new Greatest();
+        int result=0;
+    }
+ 
+    @After
+    public void TestingSubtraction() {
+        System.out.println("Executes after the Test");
+        g=null;
+        result =0;
+    }
+ 
+    @AfterClass
+    public void TestingMultiplication() {
+        System.out.println("Executes in the End of the class");
+    }
+ 
+    @BeforeClass
+    // when the class loads into LVM
+    public void TestingModulo() {
+        System.out.println("Executes before loading class in memory");
+    }
+    @Test
+    public void TestingDivision() {
+        Greatest g = new Greatest();
+         double result = g.division(10, 3);
+        Assert.assertEquals(1.3, result);
+    }
+}

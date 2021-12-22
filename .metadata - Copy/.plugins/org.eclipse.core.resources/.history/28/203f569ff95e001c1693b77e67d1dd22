@@ -1,0 +1,9 @@
+@Entity
+//@Audited
+public class Laptop {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer laptopID;
+    //@Audited
+    private String modelNo;
+}

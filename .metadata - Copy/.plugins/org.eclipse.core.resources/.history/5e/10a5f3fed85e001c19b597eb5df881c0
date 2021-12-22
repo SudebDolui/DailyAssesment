@@ -1,0 +1,18 @@
+package com.super_class;
+
+import com.super_class.SuperConstructorVsSuperKeyword.Car;
+
+	//Class 3
+	// Main class
+	// Main driver method
+
+public class SuperConstructorVsSuperKeywordMain {
+	public static void main(String[] args)
+    {
+        // Creating an object of child class
+        Car small = new Car();
+ 
+        // Calling out method defined inside child class
+        small.display();
+    }
+}
