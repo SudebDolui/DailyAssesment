@@ -9,7 +9,7 @@ public class SampleRestController {
     @Value("${myname}")
 //    //@Value("myname")
     private String name;
-    @GetMapping("/")
+    @GetMapping("/greeting")
     public String greeting() {
         return name+" Welcome to Microservices";
     }
