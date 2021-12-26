@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Employee_Table")
-public class Employee extends AuditModel implements Serializable {
+public class Employee implements Serializable {
 
 	/**
 	 * 
@@ -68,28 +68,6 @@ public class Employee extends AuditModel implements Serializable {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + Objects.hash(address, eid, name, phone, pid);
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Employee other = (Employee) obj;
-		return Objects.equals(address, other.address) && Objects.equals(eid, other.eid)
-				&& Objects.equals(name, other.name) && Objects.equals(phone, other.phone)
-				&& Objects.equals(pid, other.pid);
 	}
 
 }
