@@ -1,7 +1,6 @@
 package com.springboot_hybernet_one_to_one.model;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -15,7 +14,7 @@ public class Employee implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 6471796256922339875L;
+	private static final long serialVersionUID = 4157709487427837224L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long eid;
@@ -61,25 +60,6 @@ public class Employee implements Serializable {
 
 	public void setLaptop(Laptop laptop) {
 		this.laptop = laptop;
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(address, eid, laptop, name, phone);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Employee other = (Employee) obj;
-		return Objects.equals(address, other.address) && Objects.equals(eid, other.eid)
-				&& Objects.equals(laptop, other.laptop) && Objects.equals(name, other.name)
-				&& Objects.equals(phone, other.phone);
 	}
 
 }
