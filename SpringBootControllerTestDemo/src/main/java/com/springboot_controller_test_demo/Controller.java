@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.springboot_controller_test_demo.Employee;
+import com.springboot_controller_test_demo.MyService;
+
 @RestController
 public class Controller {
 	@Autowired

@@ -18,27 +18,27 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepo;
 
-	@GetMapping("/login")
+	@GetMapping("/index")
 	public String viewHomePage() {
-		return "login_page";
+		return "index";
 	}
 
-	@GetMapping("/register")
+	@GetMapping("/signup")
 	public String showRegistrationForm(Model model) {
 		model.addAttribute("user", new CompanyUser());
 
 		return "signup";
 	}
 
-	@PostMapping("/process_register")
+	@PostMapping("/registrationsuccess")
 	public String processRegister(CompanyUser user) {
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		String encodedPassword = passwordEncoder.encode(user.getPassword());
 		user.setPassword(encodedPassword);
 
 		userRepo.save(user);
-
-		return "registration_success";
+		System.out.println(user.getUsername());
+		return "registrationsuccess";
 	}
 
 	@GetMapping("/users")
@@ -46,7 +46,7 @@ public class UserController {
 		List<CompanyUser> listUsers = userRepo.findAll();
 		model.addAttribute("listUsers", listUsers);
 
-		return "list_users";
+		return "listusers";
 	}
 
 }
