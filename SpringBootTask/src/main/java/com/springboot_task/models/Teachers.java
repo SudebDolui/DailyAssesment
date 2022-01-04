@@ -31,7 +31,7 @@ public class Teachers implements Serializable {
 	@Column(name = "PhoneNumber", nullable = true)
 	private Integer phoneNumber;
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name ="student_roll_number")
 	private Student student;
 

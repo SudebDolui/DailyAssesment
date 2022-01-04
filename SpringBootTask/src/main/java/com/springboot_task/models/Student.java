@@ -36,7 +36,8 @@ public class Student implements Serializable {
 	@OneToOne(cascade = CascadeType.ALL)
 	private Courses course;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name ="student_roll_number")
 	private List<Teachers> teacher;
 
 	public Long getRollNumber() {
