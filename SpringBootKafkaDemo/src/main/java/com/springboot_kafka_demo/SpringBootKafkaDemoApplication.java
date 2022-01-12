@@ -19,7 +19,7 @@ public abstract class SpringBootKafkaDemoApplication implements ApplicationRunne
 	private KafkaTemplate<String, String> kafkaTemplate;
 
 	public void sendMessage(String msg) {
-		kafkaTemplate.send("tutorialspoint", msg);
+		kafkaTemplate.send("Kafka-topic", msg);
 	}
 
 	@KafkaListener(topics = "kafka-topic", groupId = "group-id")

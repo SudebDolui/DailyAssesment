@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyConsumer {
 
-    @GetMapping("consumer")
+    @GetMapping("/consumer")
     //@KafkaListener(topics = "mytopic", groupId = "mygroup")
     // employee.salary.hra
     public void consumerFromTopic(@RequestParam String msg) {
