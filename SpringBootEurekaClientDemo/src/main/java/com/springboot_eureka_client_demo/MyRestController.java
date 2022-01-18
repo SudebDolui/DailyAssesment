@@ -25,4 +25,10 @@ public class MyRestController {
 	public List<ServiceInstance> serviceInstancesByApplicationName(@PathVariable String applicationName) {
 		return this.discoveryClient.getInstances(applicationName);
 	}
+	
+	@GetMapping("/message")
+	public String showmsg() {
+		return "Welcome";
+//		this.discoveryClient.toString();
+	}
 }
